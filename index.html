@@ -217,6 +217,18 @@
     .form-success p{color:var(--charcoal);font-size:15px;line-height:1.7}
     @media(max-width:560px){.modal-header,.modal-body{padding:28px 24px}.form-row{grid-template-columns:1fr}}
 
+
+    /* FREE DEVOTIONAL */
+    .devo-sec{background:var(--dark)}
+    .devo-grid{display:grid;grid-template-columns:300px 1fr;gap:72px;align-items:center;max-width:1000px;margin:0 auto}
+    .devo-cover{width:100%;max-width:300px;border-radius:4px;box-shadow:0 28px 64px rgba(0,0,0,0.55);display:block}
+    .devo-sec .eyebrow{color:var(--light-gold)}
+    .devo-sec .eyebrow::before{background:var(--light-gold)}
+    .devo-sec .sec-title{color:#fff}
+    .devo-sec .sec-title em{font-style:normal;color:var(--light-gold)}
+    .devo-sub{color:rgba(255,255,255,0.68);font-size:17px;line-height:1.75;max-width:520px;margin-bottom:36px}
+    @media(max-width:768px){.devo-grid{grid-template-columns:1fr;gap:36px;text-align:center}.devo-cover{max-width:200px;margin:0 auto}.devo-sec .eyebrow{justify-content:center}.devo-sub{margin-left:auto;margin-right:auto}}
+
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
   </style>
 </head>
@@ -394,6 +406,19 @@
         <p>Today, Pastor Hughes and his wife Kyra serve as the founding pastors of Safe House Church in Phoenix, Arizona. His passion: helping people move beyond where they are and become everything God created them to be.</p>
         <a href="#connect" class="btn-gold" style="margin-top:8px">Connect With Us</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FREE DEVOTIONAL ====== -->
+<section class="sec devo-sec" id="devotional">
+  <div class="devo-grid">
+    <a href="devotional.html"><img class="devo-cover" src="images/bold-faith-cover.jpg" alt="10 Days to Build Bold Faith devotional cover" loading="lazy"></a>
+    <div>
+      <div class="eyebrow">Free Devotional</div>
+      <h2 class="sec-title">10 Days to Build <em>Bold Faith</em></h2>
+      <p class="devo-sub">Strengthen emotional discipline, develop spiritual stability, and build unshakeable faith. Pastor Matthew's 10-day devotional is free, and you can download it instantly.</p>
+      <a href="devotional.html" class="btn-gold">Get Your Free Copy</a>
     </div>
   </div>
 </section>
